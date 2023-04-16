@@ -17,7 +17,7 @@ plataformas = {
 
 - Segundos que esperará entre cada petición
 ```python
-timepo_espera = 3
+timepo_espera = 0
 ```
 
 - Simultaneidad. Para la paginación se devuelve un código en cada petición, por lo que esta se debe hacer secuencialmente. Con simultaneidad se refiere al número de plataformas que se analizarán simultáneamente.

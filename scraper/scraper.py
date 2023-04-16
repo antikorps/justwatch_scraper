@@ -233,7 +233,7 @@ class Justwatch:
                         for genero in registro["node"]["content"]["genres"]:
                             nombre_genero = obtener_nombre_genero(genero["shortName"])
                             generos.append(nombre_genero)
-                        generos = json.dumps(generos)
+                        generos = json.dumps(generos, ensure_ascii=False)
                     
                     sinopsis = registro.get("node").get("content").get("shortDescription")
                     
@@ -243,7 +243,7 @@ class Justwatch:
                    
                     creditos = ""
                     if "credits" in registro["node"]["content"].keys():
-                        creditos = json.dumps(registro["node"]["content"]["credits"])
+                        creditos = json.dumps(registro["node"]["content"]["credits"], ensure_ascii=False)
 
                     puntuacion_imdb = registro.get("node").get("content").get("scoring").get("imdbScore") 
 
