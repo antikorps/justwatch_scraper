@@ -113,7 +113,7 @@ class Justwatch:
             json_data = {
                 'operationName': 'GetPopularTitles',
                 'variables': {
-                    'popularTitlesSortBy': 'ALPHABETICAL',
+                    'popularTitlesSortBy': 'POPULAR',
                     'first': 50,
                     'sortRandomSeed': 0,
                     'popularAfterCursor': paginador,
